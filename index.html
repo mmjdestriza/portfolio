@@ -7,6 +7,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!--Header-->
@@ -19,21 +20,34 @@
     </div>
 
 
-      <div class="wrapper">
+      <div class="d-flex">
         <div class="main">
           <div class="hero">
             <video autoplay loop muted plays-inline class="back-video">
-                <source src="vids/coding.mp4">
+                <source src="vids/splash.mp4">
             </video>
+
+              <div class="text-box ms-5 text-light">
+                <h1>Hi I'm <span class="auto"></span></h1>
+            </div>
           </div>
+
+          <div id="skills">
+            
+          </div>
+
         </div>
         <div class="sidebar bg-dark">
             <span class="text-light" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         </div>
       </div>
       
-    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>      
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/script.js"></script>
 </html>

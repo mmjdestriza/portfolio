@@ -28,17 +28,9 @@
     transform-origin: bottom left;
   }
 
-  .wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
 
-  #vidBG{
-    position: absolute;
-    z-index: 0;
-  }
   
-  .main,
+
   .sidebar {
     padding: 15px;
     background-color: #fff;
@@ -49,22 +41,14 @@
     height: 150vh;
   }
 
-  .hero{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(lightblue,aqua);
-    position: relative;
-    padding: 0 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .back-video{
     position:absolute;
-    right: -15px;
+    right: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: -1;
+
+    width: 100%;
+    height: auto;
   }
   
   .sidebar {
@@ -75,6 +59,18 @@
     top: 0;
   }
 
+  .text-box{
+    margin-top: 15%;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 26px;
+  }
+    .text-box h1{
+        font-size: 60px;
+        line-height: 160px;
+    }
+    
+
   body {
     font-family: "Lato", sans-serif;
   }
@@ -83,7 +79,7 @@
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 2;
+    z-index: 1;
     top: 0;
     right: 75px;
     background-color: #111;
@@ -112,6 +108,8 @@
     font-size: 36px;
     margin-left: 50px;
   }
+
+  
   
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
