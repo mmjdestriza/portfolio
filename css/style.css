@@ -81,8 +81,8 @@
     position: fixed;
     z-index: 1;
     top: 0;
-    right: 75px;
-    background-color: #111;
+    left: 75px;
+    background: rgba(0,0,0,.5);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -92,7 +92,7 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: white;
     display: block;
     transition: 0.3s;
   }
@@ -116,3 +116,15 @@
     .sidenav a {font-size: 18px;}
   }
 
+  @media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+  }
+  @media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+  }
