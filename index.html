@@ -10,33 +10,28 @@
 </head>
 <body>
     <!--Header-->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark p-md-3">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-              Portfolio
-              </a>
-               
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto  ">
-              <li class="nav-item">
-                <a class="nav-link text-white hover-underline-animation" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white hover-underline-animation" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white hover-underline-animation" href="#">Skill</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white hover-underline-animation" href="#">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white hover-underline-animation" href="#">Contact</a>
-              </li>
-            </ul>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#" class="hover-underline-animation">About</a>
+        <a href="#" class="hover-underline-animation">Skills</a>
+        <a href="#" class="hover-underline-animation">Portfolio</a>
+        <a href="#" class="hover-underline-animation">Contact</a>
+    </div>
+
+
+      <div class="wrapper">
+        <div class="main">
+          <div class="hero">
+            <video autoplay loop muted plays-inline class="back-video">
+                <source src="vids/coding.mp4">
+            </video>
           </div>
         </div>
-      </nav>
+        <div class="sidebar bg-dark">
+            <span class="text-light" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+      </div>
+      
     
 </body>
 <script src="js/bootstrap.bundle.min.js"></script>
