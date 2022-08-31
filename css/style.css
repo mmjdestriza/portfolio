@@ -116,15 +116,40 @@
     .sidenav a {font-size: 18px;}
   }
 
-  @media (min-aspect-ratio: 16/9){
+  
+
+@media screen and (min-width: 800px) and (max-width: 1280px) {
     .back-video{
         width: 100%;
         height: auto;
+        top: 0;
     }
-  }
-  @media (max-aspect-ratio: 16/9){
+    
+}
+@media screen and (min-width: 481px) and (max-width: 800px) {
     .back-video{
         width: 100%;
         height: auto;
+        top: 0;
     }
-  }
+}
+@media screen and (max-width: 480px) {
+    .sidebar{
+        height: 52px;
+        width: 100%;
+    }
+    .sidenav{
+        top: 51px;
+        left: 0;
+        width: 100%;
+    }
+    .back-video{
+        width: 1000px;
+        height: 100vh;
+    }
+
+    .text-box h1{
+        font-size: 20px;
+        line-height: 160px;
+    }
+}
