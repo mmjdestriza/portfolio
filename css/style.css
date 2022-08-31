@@ -146,6 +146,7 @@
     .back-video{
         width: 1000px;
         height: 100vh;
+        right: 0;
     }
 
     .text-box h1{
