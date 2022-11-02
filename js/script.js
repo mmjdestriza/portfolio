@@ -12,6 +12,19 @@ function closeNav() {
 }
 
 
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 6,
+  freeMode: true,
+  spaceBetween: 10,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false,
+  }
+});
+
 var typed = new Typed(".auto",{
     strings:["a Web Developer","a UI Designer"],
     typeSpeed:100,
