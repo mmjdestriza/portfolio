@@ -35,17 +35,34 @@
     height: 200px;
   }
 
-  
+  .hero{
+    margin-top: 500px;
+    margin-left: 50px;
+  }
+
+  .tech{
+    margin-top: 280px;
+  }
+
+  .swiper-slide img{
+    height: 100px;
+    width: auto;
+  }
+
+  .projects{
+    margin-top: -50px;
+  }
   
 
   .sidebar {
     width: 5%;
     background-color: #fff;
+    height: auto;
   }
   
   .main {
     width: 95%;
-    height: 150vh;
+    height: 100%;
   }
 
   .back-video{
@@ -184,7 +201,7 @@
   }
 
   
-/* Desktop Screen */
+/* Big Screen */
 @media screen and (min-width: 800px) and (max-width: 1280px) {
     .back-video{
         width: 100%;
