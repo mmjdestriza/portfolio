@@ -30,6 +30,11 @@
     transform-origin: bottom left;
   }
 
+  .text-box h3{
+    font-size: 45px;
+    line-height: 80px;
+  }
+
   .swiper {
     width: auto;
     height: 200px;
@@ -41,7 +46,7 @@
   }
 
   .tech{
-    margin-top: 280px;
+    margin-top: 130px;
   }
 
   .swiper-slide img{
@@ -215,7 +220,7 @@
     }
 
     .tech{
-      margin-top: 220px;
+      margin-top: 100px;
     }
 
     .swiper-slide img{
@@ -225,6 +230,11 @@
 
     .projects{
       margin-top: -50px;
+    }
+
+    .text-box h3{
+      font-size: 30px;
+      line-height: 80px;
     }
     
 }
@@ -238,15 +248,16 @@
     }
 
     .hero{
+      margin-top: 20px;
       margin-left: 20px;
     }
 
-    .text-box h1{
+    .text-box h3{
       font-size: 25px;
-      line-height: 180px;
+      line-height: 50px;
     }
     .tech{
-      margin-top: 140px;
+      margin-top: 90px;
     }
 
     .swiper-slide img{
