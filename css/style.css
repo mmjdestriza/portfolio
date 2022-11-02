@@ -1,7 +1,9 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 .hover-underline-animation {
@@ -183,6 +185,14 @@
         height: auto;
         top: 0;
     }
+
+    .tech{
+      margin-top: 335px;
+    }
+
+    .hero{
+      margin-left: 20px;
+    }
     
 }
 @media screen and (min-width: 481px) and (max-width: 800px) {
@@ -191,10 +201,18 @@
         height: auto;
         top: 0;
     }
+
+    .hero{
+      margin-left: 20px;
+    }
+
     .text-box h1{
       font-size: 25px;
       line-height: 180px;
-  }
+    }
+    .tech{
+      margin-top: 135px;
+    }
 }
 @media screen and (max-width: 480px) {
     .sidebar{
@@ -210,9 +228,22 @@
         top:0px;
     }
 
-    .text-box h1{
-        font-size: 20px;
-        line-height: 160px;
+    .main{
+      width: 100%;
+    }
+
+    .hero{
+      margin-top: 150px;
+      margin-left: 20px;
+    }
+
+    .text-box h3{
+        font-size: 18px;
+        line-height: 50px;
+    }
+
+    .tech{
+      margin-top: 125px;
     }
 }
 

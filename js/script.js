@@ -13,7 +13,7 @@ function closeNav() {
 
 
 var typed = new Typed(".auto",{
-    strings:["Mark Joseph Destriza","a Web Developer","a UI Designer"],
+    strings:["a Web Developer","a UI Designer"],
     typeSpeed:100,
     backSpeed:100,
     loop:true,
