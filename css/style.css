@@ -192,18 +192,22 @@
         top: 0;
     }
 
-    .tech{
-      margin-top: 220px;
-    }
-
     .hero{
       margin-top: 300px;
       margin-left: 50px;
     }
 
+    .tech{
+      margin-top: 220px;
+    }
+
     .swiper-slide img{
       height: 100px;
       width: auto;
+    }
+
+    .projects{
+      margin-top: -50px;
     }
     
 }
@@ -231,6 +235,10 @@
     .swiper-slide img{
       height: 70px;
       width: auto;
+    }
+
+    .projects{
+      margin-top: -50px;
     }
 }
 
@@ -272,6 +280,10 @@
     .swiper-slide img{
       height: 40px;
       width: auto;
+    }
+
+    .projects{
+      margin-top: -110px;
     }
 }
 
