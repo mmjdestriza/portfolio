@@ -216,11 +216,11 @@
 }
 @media screen and (max-width: 480px) {
     .sidebar{
-        height: 5%;
+        height: 50px;
         width: 100%;
     }
     .sidenav{
-        top: 5%;
+        margin-top: 50px;
         left: 0;
     }
     .back-video{
