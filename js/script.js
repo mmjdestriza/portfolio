@@ -18,7 +18,7 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   slidesPerView: 6,
   freeMode: true,
-  spaceBetween: 10,
+  spaceBetween: 30,
   autoplay: {
     delay: 1000,
     disableOnInteraction: false,
