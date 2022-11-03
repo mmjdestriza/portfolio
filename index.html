@@ -18,22 +18,24 @@
     <!-- Swiper JS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
 <body>
     <!--Header-->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#" class="hover-underline-animation">About</a>
-        <a href="#" class="hover-underline-animation">Skills</a>
-        <a href="#" class="hover-underline-animation">Portfolio</a>
-        <a href="#" class="hover-underline-animation">Contact</a>
+        <a href="#skills" class="hover-underline-animation">Skills</a>
+        <a href="#project" class="hover-underline-animation">Projects</a>
+        <a href="#contact" class="hover-underline-animation">Contact</a>
     </div>
 
 
       <div class="d-flex flex-column flex-md-row flex-lg-row">
         <!-- Sidebar -->
-        <div class="sidebar bg-dark text-center">
-            <span class="text-light mt-5" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div class="sidebar bg-dark text-sm-start text-md-center text-lg-center">
+            <span class="text-light mx-2 mt-5" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         </div>
         <!-- Main Content -->
         <div class="main">
@@ -43,9 +45,9 @@
             </video>
 
               <div class="text-box text-light">
-                <h3>Hello!</h3>
-                <h3>My name is Mark Joseph Destriza</h3>
-                <h3>I'm <span class="auto"></span></h3>
+                <h3 data-aos="fade-up" data-aos-duration="1500">Hello!</h3>
+                <h3 data-aos="fade-up" data-aos-duration="1800">My name is Mark Joseph Destriza</h3>
+                <h3 data-aos="fade-up" data-aos-duration="2100">I'm <span class="auto"></span></h3>
                 <br>
                 <div class="d-flex flex-row">
                   <div class="p-2">
@@ -60,7 +62,7 @@
           </div>
 
           <!-- Technologies -->
-          <div class="tech text-center">
+          <div id="skills" class="tech text-center">
             <h3>Technologies & Tools</h3>
 
             <div class="swipers mt-5">
@@ -114,7 +116,7 @@
           </div>
 
           <!-- Projects -->
-          <div class="projects text-center">
+          <div id="projects" class="projects text-center">
             <h1>Projects</h1>
             <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
               <div class="p-2">
@@ -146,6 +148,34 @@
                     <a href="#" class="stretched-link"></a>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="contact" class="contact">
+            <h4 class="text-center"><strong>Contact Me</strong></h4>
+            <div class="p-2 m-3 d-flex flex-wrap justify-content-center gap-3">
+              <div class="p-2">
+                <i class='bx bxl-gmail'></i>
+                <p><code>mmjdestriza@gmail.com</code></p>
+                <i class='bx bx-phone'></i>
+                <p><code>(+63)9217426831</code></p>
+              </div>
+              <div class="p-2 col-7">
+                <form action="https://formspree.io/f/xeqdpdgp" method="POST">
+                  <div class="mb-3">
+                    <label for="emailbox" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="emailbox" name="email" placeholder="Email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formcontrol" class="form-label">Your Messge</label>
+                    <textarea class="form-control" id="formcontrol" rows="3" name="message" placeholder="Message"></textarea>
+                  </div>
+                  <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Send</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
