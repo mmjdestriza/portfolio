@@ -140,7 +140,7 @@
 
   .glow-on-hover {
     width: 150px;
-    height: 50px;
+    height: auto;
     border: none;
     outline: none;
     color: #fff;
