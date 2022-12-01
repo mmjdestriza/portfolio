@@ -2,6 +2,14 @@
 var nav = document.querySelector('nav');
 var banner = document.getElementById('banner');
 
+var menu = document.getElementById("menu");
+var sidenav = document.getElementById("sidebar");
+
+menu.onclick = function(){
+  menu.classList.toggle("openmenu");
+  sidenav.classList.toggle("opensidenav");
+}
+
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";

@@ -24,10 +24,9 @@
   </head>
 <body>
     <!--Header-->
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div id="sidebar" class="sidenav">
         <a href="#skills" class="hover-underline-animation">Skills</a>
-        <a href="#project" class="hover-underline-animation">Projects</a>
+        <a href="#projects" class="hover-underline-animation">Projects</a>
         <a href="#contact" class="hover-underline-animation">Contact</a>
     </div>
 
@@ -35,7 +34,15 @@
       <div class="d-flex flex-column flex-md-row flex-lg-row">
         <!-- Sidebar -->
         <div class="sidebar bg-dark text-sm-start text-md-center text-lg-center">
-            <span class="text-light mx-2 mt-5" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          <div class="container align-items-center d-flex justify-content-center">
+            <div class="menu" id="menu">
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+          </div>
         </div>
         <!-- Main Content -->
         <div class="main">
