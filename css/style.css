@@ -388,7 +388,7 @@ body {
 }
 
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
   .back-video {
     width: 100%;
     height: auto;
@@ -407,6 +407,37 @@ body {
 
   .tech {
     margin-top: 230px;
+  }
+
+  .swiper-slide img {
+    height: 50px;
+    width: auto;
+  }
+
+  .projects {
+    margin-top: -50px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .back-video {
+    width: 100%;
+    height: auto;
+    top: 0;
+  }
+
+  .hero {
+    margin-top: 40%;
+    margin-left: 20px;
+  }
+
+  .text-box h3 {
+    font-size: 25px;
+    line-height: 50px;
+  }
+
+  .tech {
+    margin-top: 130px;
   }
 
   .swiper-slide img {
