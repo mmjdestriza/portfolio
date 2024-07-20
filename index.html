@@ -1,203 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Animate on Scroll -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Animate on Scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <!-- Poppin Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <!-- Poppin Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 
-    <!-- Swiper JS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-    <!-- Box Icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  </head>
+  <!-- Box Icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
 <body>
-    <!--Header-->
-    <div id="sidebar" class="sidenav">
-        <a href="#skills" class="hover-underline-animation">Skills</a>
-        <a href="#projects" class="hover-underline-animation">Projects</a>
-        <a href="#contact" class="hover-underline-animation">Contact</a>
-    </div>
+  <!--Header-->
+  <div id="sidebar" class="sidenav">
+    <a href="#skills" class="hover-underline-animation">Skills</a>
+    <a href="#projects" class="hover-underline-animation">Projects</a>
+    <a href="#contact" class="hover-underline-animation">Contact</a>
+  </div>
 
 
-      <div class="d-flex flex-column flex-md-row flex-lg-row">
-        <!-- Sidebar -->
-        <div class="sidebar bg-dark text-sm-start text-md-center text-lg-center">
-          <div class="container align-items-center d-flex justify-content-center">
-            <div class="menu" id="menu">
-                <div>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
+  <div class="d-flex flex-column flex-md-row flex-lg-row">
+    <!-- Sidebar -->
+    <div class="sidebar bg-dark text-sm-start text-md-center text-lg-center">
+      <div class="container align-items-center d-flex justify-content-center">
+        <div class="menu" id="menu">
+          <div>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
-        <!-- Main Content -->
-        <div class="main">
-          <div class="hero">
-            <video autoplay loop muted plays-inline class="back-video">
-                <source src="images/vids/splash.mp4">
-            </video>
+      </div>
+    </div>
+    <!-- Main Content -->
+    <div class="main">
+      <div class="hero">
+        <video autoplay loop muted plays-inline class="back-video">
+          <source src="images/vids/splash.mp4">
+        </video>
 
-              <div class="text-box text-light">
-                <h3 data-aos="fade-up" data-aos-duration="1500">Hello!</h3>
-                <h3 data-aos="fade-up" data-aos-duration="1800">My name is Mark Joseph Destriza</h3>
-                <h3 data-aos="fade-up" data-aos-duration="2100">I'm <span class="auto"></span></h3>
-                <br>
-                <div class="d-flex flex-row">
-                  <div class="p-2">
-                    <a href="https://drive.google.com/file/d/1XwqEKLInpMUDzZTF3F39q7jxwiyt1_fe/view?usp=sharing" class="btn glow-on-hover">My Resume</a>
-                  </div>
-                  <div class="p-2">
-                    <a href="#projects" class="btn text-light btn-outline-light glow-on-hover">Projects</a>
-                  </div>
-                  
-                </div>
+        <div class="text-box text-light intro">
+          <h3 data-aos="fade-up" data-aos-duration="1500">Hello!</h3>
+          <h3 data-aos="fade-up" data-aos-duration="1800">My name is Mark Joseph Destriza</h3>
+          <h3 data-aos="fade-up" data-aos-duration="2100">I'm <span class="auto"></span></h3>
+          <br>
+          <div class="d-flex flex-row top-0">
+            <div class="p-2">
+              <a href="https://drive.google.com/file/d/1XwqEKLInpMUDzZTF3F39q7jxwiyt1_fe/view?usp=sharing"
+                class="btn glow-on-hover">My Resume</a>
             </div>
-          </div>
-
-          <!-- Technologies -->
-          <div id="skills" class="tech text-center">
-            <h3>Technologies & Tools</h3>
-
-            <div class="swipers mt-5">
-                <div class="swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="images/logos/bootstrap.svg">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="images/logos/css.svg">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="images/logos/expressjs-icon.svg">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="images/logos/getpostman-icon.svg">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="images/logos/git.svg">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="images/logos/github.svg">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="images/logos/html.svg">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="images/logos/javascript.svg">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="images/logos/mongodb-icon.svg">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="images/logos/mysql-official.svg">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="images/logos/vscode.svg">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="images/logos/firebase-svgrepo-com.svg">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="images/logos/tailwindcss-svgrepo-com.svg">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="images/logos/nodejs-logo-svgrepo-com.svg">
-                    </div>
-                  </div>
-                </div>
+            <div class="p-2">
+              <a href="#projects" class="btn text-light btn-outline-light glow-on-hover">Projects</a>
             </div>
+
           </div>
+        </div>
+      </div>
 
-          <!-- Projects -->
-          <div id="projects" class="projects text-center">
-            <h1>Projects</h1>
-            <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
-              <div class="p-2">
-                <div class="card" style="width: 18rem;">
-                  <img src="https://images.pexels.com/photos/39317/chihuahua-dog-puppy-cute-39317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">PawFinder</h5>
-                    <p class="card-text">Find a dog a new home</p>
-                    <code>HTML|CSS|Bootstrap</code>
-                    <a href="https://mmjdestriza.github.io/pawfinder/" class="stretched-link"></a>
-                  </div>
-                </div>
-              </div>
-              <div class="p-2">
-                <div class="card" style="width: 18rem;">
-                  <img src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Fitness Ground</h5>
-                    <p class="card-text">Find a suitable workout for you</p>
-                    <code>ReactJs|Bootstrap</code>
-                    <a href="https://gym-website-p4yc.vercel.app/" class="stretched-link"></a>
-                  </div>
-                </div>
-              </div>
-              <div class="p-2">
-                <div class="card" style="width: 18rem;">
-                  <img src="https://images.pexels.com/photos/5807481/pexels-photo-5807481.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Supfly</h5>
-                    <p class="card-text">Buy Fresh Products Directly From Farmers</p>
-                    <code>PHP|Laravel 9|MySQL|Tailwind</code>
-                    <a href="#" class="stretched-link"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <!-- Technologies -->
+      <div id="skills" class="tech text-center">
+        <h3>Technologies & Tools</h3>
 
-
-          <div id="contact" class="contact">
-            <h4 class="text-center"><strong>Contact Me</strong></h4>
-            <div class="p-2 m-3 d-flex flex-wrap justify-content-center gap-3">
-              <div class="p-2 text-center">
-                <i class='bx bxl-gmail'></i>
-                <p><mark><strong>dev.mjdestriza@gmail.com</strong></mark></p>
-                <i class='bx bx-phone'></i>
-                <p><mark><strong>(+63)9217426831</strong></mark></p>
+        <div class="swipers mt-5">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/logos/bootstrap.svg">
               </div>
-              <div class="p-2 col-7">
-                <form action="https://formspree.io/f/xeqdpdgp" method="POST">
-                  <div class="mb-3">
-                    <label for="emailbox" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="emailbox" name="email" placeholder="Email">
-                  </div>
-                  <div class="mb-3">
-                    <label for="formcontrol" class="form-label">Your Messge</label>
-                    <textarea class="form-control" id="formcontrol" rows="3" name="message" placeholder="Message"></textarea>
-                  </div>
-                  <div class="d-grid">
-                    <button type="submit" class="btn btn-primary">Send</button>
-                  </div>
-                </form>
+              <div class="swiper-slide">
+                <img src="images/logos/css.svg">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/logos/expressjs-icon.svg">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/logos/getpostman-icon.svg">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/logos/git.svg">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/logos/github.svg">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/logos/html.svg">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/logos/javascript.svg">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/logos/mongodb-icon.svg">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/logos/mysql-official.svg">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/logos/vscode.svg">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/logos/firebase-svgrepo-com.svg">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/logos/tailwindcss-svgrepo-com.svg">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/logos/nodejs-logo-svgrepo-com.svg">
               </div>
             </div>
           </div>
         </div>
       </div>
-      
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>      
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+
+      <!-- Projects -->
+      <div id="projects" class="projects text-center">
+        <h1>Projects</h1>
+        <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
+          <div class="p-2">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="https://images.pexels.com/photos/39317/chihuahua-dog-puppy-cute-39317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PawFinder</h5>
+                <p class="card-text">Find a dog a new home</p>
+                <code>HTML|CSS|Bootstrap</code>
+                <a href="https://mmjdestriza.github.io/pawfinder/" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+          <div class="p-2">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Fitness Ground</h5>
+                <p class="card-text">Find a suitable workout for you</p>
+                <code>ReactJs|Bootstrap</code>
+                <a href="https://gym-website-p4yc.vercel.app/" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+          <div class="p-2">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="https://images.pexels.com/photos/5807481/pexels-photo-5807481.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Supfly</h5>
+                <p class="card-text">Buy Fresh Products Directly From Farmers</p>
+                <code>PHP|Laravel 9|MySQL|Tailwind</code>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="contact" class="contact">
+        <h4 class="text-center"><strong>Contact Me</strong></h4>
+        <div class="p-2 m-3 d-flex flex-wrap justify-content-center gap-3">
+          <div class="p-2 text-center">
+            <i class='bx bxl-gmail'></i>
+            <p><mark><strong>dev.mjdestriza@gmail.com</strong></mark></p>
+            <i class='bx bx-phone'></i>
+            <p><mark><strong>(+63)9217426831</strong></mark></p>
+          </div>
+          <div class="p-2 col-7">
+            <form action="https://formspree.io/f/xeqdpdgp" method="POST">
+              <div class="mb-3">
+                <label for="emailbox" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="emailbox" name="email" placeholder="Email">
+              </div>
+              <div class="mb-3">
+                <label for="formcontrol" class="form-label">Your Messge</label>
+                <textarea class="form-control" id="formcontrol" rows="3" name="message"
+                  placeholder="Message"></textarea>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
+
 </html>

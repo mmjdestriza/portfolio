@@ -1,324 +1,344 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 .hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    color: white;
-  }
-  
-  .hover-underline-animation:after {
-    content: '';
-    position: absolute;
-    width: 38%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 30px;
-    background-color: white;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  
-  .hover-underline-animation:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 38%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 30px;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.text-box h3 {
+  font-size: 45px;
+  line-height: 80px;
+}
+
+.swiper {
+  width: auto;
+  height: 200px;
+}
+
+.hero {
+  margin-top: 20%;
+  margin-left: 50px;
+}
+
+.tech {
+  margin-top: 8%;
+}
+
+.swiper-slide img {
+  height: 100px;
+  width: auto;
+}
+
+.projects {
+  margin-top: -50px;
+}
+
+
+.sidebar {
+  width: 5%;
+  background-color: #fff;
+  height: auto;
+}
+
+.main {
+  width: 95%;
+  height: 100%;
+}
+
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+}
+
+.sidebar {
+  width: 5%;
+  height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.text-box {
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 26px;
+}
+
+.text-box h1 {
+  font-size: 60px;
+  line-height: 160px;
+}
+
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 5%;
+  background: rgba(0, 0, 0, .5);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.opensidenav {
+  width: 250px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.glow-on-hover {
+  width: 150px;
+  height: auto;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
   }
 
-  .text-box h3{
-    font-size: 45px;
-    line-height: 80px;
+  50% {
+    background-position: 400% 0;
   }
 
-  .swiper {
-    width: auto;
-    height: 200px;
+  100% {
+    background-position: 0 0;
+  }
+}
+
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
   }
 
-  .hero{
-    margin-top: 27%;
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+
+/* Big Screen */
+@media screen and (min-width: 800px) and (max-width: 1280px) {
+  .back-video {
+    width: 100%;
+    height: auto;
+    top: 0;
+  }
+
+  .intro {
+    margin-bottom: 500px;
+  }
+
+  .hero {
+    margin-top: 200px;
     margin-left: 50px;
   }
 
-  .tech{
-    margin-top: 8%;
+  .tech {
+    margin-top: 100px;
   }
 
-  .swiper-slide img{
+  .swiper-slide img {
     height: 100px;
     width: auto;
   }
 
-  .projects{
+  .projects {
     margin-top: -50px;
   }
-  
 
-  .sidebar {
-    width: 5%;
-    background-color: #fff;
-    height: auto;
-  }
-  
-  .main {
-    width: 95%;
-    height: 100%;
+  .text-box h3 {
+    font-size: 30px;
+    line-height: 80px;
   }
 
-  .back-video{
-    position:absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    width: 100%;
-    height: auto;
-  }
-  
-  .sidebar {
-    width: 5%;
-    height: 100vh;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-  }
-
-  .text-box{
-    font-size: 15px;
-    letter-spacing: 1px;
-    line-height: 26px;
-  }
-    .text-box h1{
-        font-size: 60px;
-        line-height: 160px;
-    }
-    
-
-  body {
-    font-family: "Lato", sans-serif;
-  }
-  
-  .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    left: 5%;
-    background: rgba(0,0,0,.5);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-
-  .opensidenav{
-    width: 250px;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-
-  .glow-on-hover {
-    width: 150px;
-    height: auto;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-}
-
-.glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-}
-
-.glow-on-hover:active {
-    color: #000
-}
-
-.glow-on-hover:active:after {
-    background: transparent;
-}
-
-.glow-on-hover:hover:before {
-    opacity: 1;
-}
-
-.glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-}
-
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
-}
-
-  
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
-
-  
-/* Big Screen */
-@media screen and (min-width: 800px) and (max-width: 1280px) {
-    .back-video{
-        width: 100%;
-        height: auto;
-        top: 0;
-    }
-
-    .hero{
-      margin-top: 300px;
-      margin-left: 50px;
-    }
-
-    .tech{
-      margin-top: 100px;
-    }
-
-    .swiper-slide img{
-      height: 100px;
-      width: auto;
-    }
-
-    .projects{
-      margin-top: -50px;
-    }
-
-    .text-box h3{
-      font-size: 30px;
-      line-height: 80px;
-    }
-    
 }
 
 /* Medium Screen */
 @media screen and (min-width: 481px) and (max-width: 800px) {
-    .back-video{
-        width: 100%;
-        height: auto;
-        top: 0;
-    }
+  .back-video {
+    width: 100%;
+    height: auto;
+    top: 0;
+  }
 
-    .hero{
-      margin-top: 20px;
-      margin-left: 20px;
-    }
+  .hero {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
 
-    .text-box h3{
-      font-size: 25px;
-      line-height: 50px;
-    }
-    .tech{
-      margin-top: 90px;
-    }
+  .text-box h3 {
+    font-size: 25px;
+    line-height: 50px;
+  }
 
-    .swiper-slide img{
-      height: 50px;
-      width: auto;
-    }
+  .tech {
+    margin-top: 90px;
+  }
 
-    .projects{
-      margin-top: -50px;
-    }
+  .swiper-slide img {
+    height: 50px;
+    width: auto;
+  }
+
+  .projects {
+    margin-top: -50px;
+  }
 }
 
 
 /* Small Screen */
 @media screen and (max-width: 480px) {
-    .sidebar{
-        height: 50px;
-        width: 100%;
-        z-index: 10;
-    }
-    .sidenav{
-        margin-top: 50px;
-        left: 0;
-    }
-    .back-video{
-        width: 1000px;
-        top:0px;
-    }
+  .sidebar {
+    height: 50px;
+    width: 100%;
+    z-index: 10;
+  }
 
-    .main{
-      width: 100%;
-    }
+  .sidenav {
+    margin-top: 50px;
+    left: 0;
+  }
 
-    .hero{
-      margin-top: 150px;
-      margin-left: 20px;
-    }
+  .back-video {
+    width: 1000px;
+    top: 0px;
+  }
 
-    .text-box h3{
-        font-size: 18px;
-        line-height: 50px;
-    }
+  .main {
+    width: 100%;
+  }
 
-    .tech{
-      margin-top: 125px;
-    }
+  .hero {
+    margin-top: 150px;
+    margin-left: 20px;
+  }
 
-    .swiper-slide img{
-      height: 25px;
-      width: auto;
-    }
+  .text-box h3 {
+    font-size: 18px;
+    line-height: 50px;
+  }
 
-    .projects{
-      margin-top: -110px;
-    }
+  .tech {
+    margin-top: 125px;
+  }
+
+  .swiper-slide img {
+    height: 25px;
+    width: auto;
+  }
+
+  .projects {
+    margin-top: -110px;
+  }
 }
 
 
-.menu{
+.menu {
   width: 50px;
   height: 50px;
   margin: 8px;
@@ -326,14 +346,14 @@
   cursor: pointer;
 }
 
-.menu div{
+.menu div {
   width: 30px;
   height: 5px;
   margin: 9px;
   position: relative;
 }
 
-.menu span{
+.menu span {
   background: #fff;
   width: 100%;
   height: 3px;
@@ -342,27 +362,30 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   transition: transform 0.5s, width 0.5s;
 }
 
-.menu .sidenav{
+.menu .sidenav {
   width: 0;
 }
-.menu span:nth-child(2){
+
+.menu span:nth-child(2) {
   transform: translate(-50%, 10px);
 }
-.menu span:nth-child(3){
+
+.menu span:nth-child(3) {
   transform: translate(-50%, 20px);
 }
 
-.openmenu span:nth-child(2){
+.openmenu span:nth-child(2) {
   transform: translate(-50%, 10px) rotate(-45deg);
 }
-.openmenu span:nth-child(3){
+
+.openmenu span:nth-child(3) {
   transform: translate(-50%, 10px) rotate(45deg);
 }
-.openmenu span:nth-child(1){
+
+.openmenu span:nth-child(1) {
   width: 0;
 }
-
