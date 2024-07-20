@@ -325,7 +325,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
   .back-video {
     width: 100%;
     height: auto;
@@ -344,6 +344,37 @@ body {
 
   .tech {
     margin-top: -400px;
+  }
+
+  .swiper-slide img {
+    height: 50px;
+    width: auto;
+  }
+
+  .projects {
+    margin-top: -50px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439) {
+  .back-video {
+    width: 100%;
+    height: auto;
+    top: 0;
+  }
+
+  .hero {
+    margin-top: 27%;
+    margin-left: 20px;
+  }
+
+  .text-box h3 {
+    font-size: 25px;
+    line-height: 50px;
+  }
+
+  .tech {
+    margin-top: -300px;
   }
 
   .swiper-slide img {
