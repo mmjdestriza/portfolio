@@ -356,7 +356,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1439) {
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
   .back-video {
     width: 100%;
     height: auto;
